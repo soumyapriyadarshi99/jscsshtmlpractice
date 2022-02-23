@@ -1,0 +1,183 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  text-align: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #4f86c5;
+  padding-bottom: 1rem;
+}
+
+label {
+  text-align: center;
+}
+
+.navbar {
+  display: none;
+}
+
+button {
+  background-color: #589ed8;
+}
+
+.container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sectionhead {
+  text-align: center;
+}
+
+.dropdown {
+  text-align: end;
+  padding-bottom: 2rem;
+}
+
+.pagepara {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.button {
+  padding-left: 7rem;
+  padding-right: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.footerpage ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.footerprofile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footerprofile img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.footerform {
+  margin-bottom: 1rem;
+}
+
+.footerform label {
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.footerform input {
+  padding-top: 1rem;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+.footerform form button {
+  background-color: bisque;
+  color: white;
+  border-radius: 20%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+  .dropdown {
+    display: none;
+  }
+  .sectionhead h3 {
+    text-align: left;
+  }
+  .footerform {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+  .footerform h2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .button {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+  .navbar {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+  .dropdown {
+    display: none;
+  }
+  .sectionhead h3 {
+    text-align: left;
+  }
+  .footerform {
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+  .footerform h2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .button {
+    padding-left: 25rem;
+    padding-right: 25rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */

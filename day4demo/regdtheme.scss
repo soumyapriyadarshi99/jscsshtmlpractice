@@ -1,0 +1,15 @@
+::placeholder {
+  font-size: 13px;
+}
+label {
+  font-size: 18px;
+  color: rgb(156, 156, 156);
+}
+@media screen and (max-width: 550px) {
+  ::placeholder {
+    font-size: 10px;
+  }
+  label {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,22 @@
+.container {
+  display: -ms-grid;
+  display: grid;
+  background-color: burlywood;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.paragraph {
+  background-color: cadetblue;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=grid.css.map */

@@ -1,0 +1,20 @@
+.container {
+  background-color: burlywood;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.paragraph {
+  padding: 1rem;
+  background-color: cyan;
+  margin-bottom: 1rem;
+  flex: 0 47%;
+}
+@media screen and(max-width:480px) {
+  .container {
+    flex-direction: column;
+  }
+}

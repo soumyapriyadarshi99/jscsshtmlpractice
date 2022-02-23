@@ -1,0 +1,36 @@
+.container {
+  background: linear-gradient(#e66465, #9198e5);
+}
+ul li {
+  font-size: 15px;
+  line-height: 25px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  list-style: none;
+  display: inline;
+}
+.parent {
+  background-color: brown;
+  position: relative;
+}
+.child1 {
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+}
+.child2 {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(46, 195, 88);
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+.subchild {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  background-color: coral;
+  left: 10px;
+  top: 10px;
+}

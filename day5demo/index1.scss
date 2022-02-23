@@ -1,0 +1,10 @@
+.container {
+  height: 100px;
+  width: 100px;
+  background-color: aquamarine;
+  transition: 2s;
+}
+.container:hover {
+  background-color: brown;
+  transform: rotate(30deg);
+}

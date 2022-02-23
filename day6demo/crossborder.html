@@ -1,0 +1,44 @@
+Cross-browser example
+<header>
+  <p>This is my header paragraph</p>
+</header>
+
+<main>
+  <ul>
+    <li><p>This is my first</p><p>list item</p></li>
+    <li><p>This is my second</p><p>list item</p></li>
+  </ul>
+</main>
+
+<footer>
+  <p>This is my footer paragraph</p>
+</footer>
+<style>
+:-webkit-any(header, main, footer) p:hover {
+  color: red;
+  cursor: pointer;
+}
+
+:-ms-(header, main, footer) p:hover {
+  color: rgb(0, 255, 21);
+  cursor: pointer;
+}
+
+
+:-moz-any(header, main, footer) p:hover {
+  color: rgb(255, 217, 0);
+  cursor: pointer;
+}
+
+
+
+:matches(header, main, footer) p:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* :is(header, main, footer) p:hover {
+  color: red;
+  cursor: pointer;
+} */
+</style>

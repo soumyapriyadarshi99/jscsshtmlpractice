@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table.css"/>
+</head>
+<body>
+    <header>
+        <h1>School Resgitration form</h1>
+    </header>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" ><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset"><br><br>
+        <h3>choose your fav lang</h3>
+        <input type="radio" id="english" name="fav-language" value="English"/>
+        <label for="english">English</label><br>
+        <input type="radio" id="hindi" name="fav-language" value="hindi"/>
+        <label for="hindi">Hindi</label>
+      </form>
+      <form>
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
+          <label for="vehicle1">I have a motorcycle</label><br>
+          <input type="button" onclick="alert('hello World!')" value="clickme"><br>
+          <label for="favcolor"> Select fav color</label>
+          <input type="color" id="favcolor" name="favcolor"><br><br>
+          <label for="birthday">birthday date</label>
+          <input type="date" id="birthday" name="birthday"><br>
+          <label for="datemax">maximium date</label>
+          <input type="date" id="datemax" name="datemax" max="1999-02-07"><br><br>
+          <label for="myfile">select file</label>
+          <input type="file" id="myfile" name="myfile">
+          <label for="gender">Gender</label>
+          <select id ="gender" name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="others">Others</option>
+          </select>
+      </form>
+
+      <form >
+           <label for="homepage">google</label>
+          <input type="url" id="homepage" name="homepage">
+          <lable for="pin">Enter pin</lable>
+          <input type="number" id="pin" size="4" maxlength="4"><br><br>
+          <lable for="file">Select files</lable>
+          <input type="file" id="file" multiple><br><br>
+          <label for="country_code">Country code</label>
+          <input type="text" id="country_code" pattern="[a-zA-z1-9]{3}">
+          <input type="submit" value="close"/>
+          
+          
+      </form>
+      <form action = "" method = "get" novalidate>
+        Student Name<br><input type="name" name="sname"><br>
+        Total Marks<br><input type="number" name="mark"><br>
+        <input type="submit" value="Submit">
+     </form>
+     <form>
+        <table class="table1" border="3px" >
+            <thead>
+                <tr>
+                    <th rowspan="2">userid</th>
+                    <th rowspan="2">first name</th>
+                    <th rowspan="2">city</th>
+                    <th colspan="3">marks</th>
+                    
+                </tr>
+                <tr>
+                    <th>subject1</th>
+                    <th>subject2</th>
+                    <th>subject3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>mohit yaadv</td>
+                    <td>city</td>
+                    <td>73</td>
+                    <td>80</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td>userid</td>
+                    <td>first name</td>
+                    <td>city</td>
+                    <td>73</td>
+                    <td>80</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td>userid</td>
+                    <td>first name</td>
+                    <td>city</td>
+                    <td>73</td>
+                    <td>80</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td>userid</td>
+                    <td>first name</td>
+                    <td>city</td>
+                    <td>73</td>
+                    <td>80</td>
+                    <td>89</td>
+                </tr>
+            </tbody>
+        </table>
+     </form>
+      
+</body>
+</html>

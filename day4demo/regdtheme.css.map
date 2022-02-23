@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACZ,SAAS,EAAE,IAAI;CAChB;;AACD,AAAA,KAAK,CAAC;EACJ,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,OAAkB;CAC1B;;AACD,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EACjC,AAAA,aAAa,CAAC;IACZ,SAAS,EAAE,IAAI;GAChB;EACD,AAAA,KAAK,CAAC;IACJ,SAAS,EAAE,IAAI;GAChB",
+    "sources": [
+        "regdtheme.scss"
+    ],
+    "names": [],
+    "file": "regdtheme.css"
+}

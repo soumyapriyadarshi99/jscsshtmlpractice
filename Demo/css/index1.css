@@ -1,0 +1,35 @@
+.parent {
+  height: 500px;
+  width: 500px;
+  background-color: #ffe4c4;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.green {
+  background-color: green;
+  height: 50px;
+  width: 50px;
+}
+
+.yellow {
+  background-color: yellow;
+  height: 50px;
+  width: 50px;
+}
+
+.pink {
+  background-color: pink;
+  height: 50px;
+  width: 50px;
+}
+/*# sourceMappingURL=index1.css.map */

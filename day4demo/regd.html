@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regdtheme.css">
+    <link rel="stylesheet" href="regd.css ">
+        <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registration</div>
+        <form>
+            <div class="userdetails">
+                <div class="inputbox">
+                    <label for="fullname">Enter Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter Full Name"  required>
+                </div>
+                <div class="inputbox">
+                    <label for="userName">Enter User Name</label>
+                    <input type="text" id="userName" name="userName" placeholder="Enter User Name" required>
+                </div>
+                <div class="inputbox">
+                    <label for="mobile">Enter phone</label>
+                    <input type="phone" id="mobile" name="mobile" placeholder="Enter Mobile Number" required>
+                </div>
+                <div class="inputbox">
+                    <label for="email">Enter Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                </div>
+                <div class="inputbox">
+                    <label for="password">Enter Password</label>
+                    <input type="text" id="password" name="password" placeholder="Enter password" required>
+                </div>
+                <div class="inputbox">
+                    <label for="cpsd">Confirm Password</label>
+                    <input type="text" id="cpsd" name="cpsd" placeholder="Confirm password" required>
+                </div>
+            </div>
+                <div class="gender">
+                    <div class="gendertitle">Gender</div>
+                    <div class="category">
+                      <input type="radio" id="male" name="gender">
+                      <label for="male">Male</label>
+                      <input type="radio" id="female" name="gender">
+                      <label for="female">Female</label>
+                      <input type="radio" id="others" name="gender">
+                      <label for="others">Prefer not to say</label>
+                    </div>
+                </div>
+            <div class="button">
+                <input type="submit" id="submit" value="Register">
+            </div>
+            <div class="footer"></div>
+        </form>
+    </div>
+</body>
+</html>

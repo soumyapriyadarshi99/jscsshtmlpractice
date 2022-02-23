@@ -1,0 +1,16 @@
+.container {
+  display: grid;
+  background-color: burlywood;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+  gap: 1rem;
+}
+.paragraph {
+  background-color: cadetblue;
+  padding: 1rem;
+}
+@media screen and(max-width:480px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

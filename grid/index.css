@@ -1,0 +1,43 @@
+body {
+  box-sizing: border-box;
+}
+main {
+  width: 90%;
+  margin: 50px auto;
+  border: 5px solid black;
+  display: grid;
+  grid-template-rows: 150px 150px;
+  grid-template-columns: 150px 1fr 150px;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+.div1 {
+  background-color: brown;
+  border: 5px solid yellow;
+}
+.div2 {
+  background-color: rgb(42, 165, 97);
+  border: 5px solid yellow;
+}
+.div3 {
+  background-color: rgb(165, 112, 42);
+  border: 5px solid yellow;
+}
+.div4 {
+  background-color: rgb(41, 117, 193);
+  border: 5px solid yellow;
+}
+
+.div5 {
+  background-color: rgb(161, 169, 150);
+  border: 5px solid yellow;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.div6 {
+  background-color: rgb(207, 116, 104);
+  border: 5px solid yellow;
+}

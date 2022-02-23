@@ -1,0 +1,17 @@
+$flag: 1;
+$theme-decide: 3;
+
+body {
+  //green background
+  @if $theme-decide == 3 {
+    background-color: rgb(60, 179, 113);
+  }
+  // pink background
+  @else if $theme-decide == 2 {
+    background-color: rgb(238, 130, 238);
+  }
+  // yellow background
+  @else {
+    background-color: rgba(240, 255, 71, 0.5);
+  }
+}

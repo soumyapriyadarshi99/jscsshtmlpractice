@@ -1,0 +1,24 @@
+.navigationbar {
+  background: linear-gradient(#ee9ca7, #ffdde1);
+}
+ul li {
+  list-style: none;
+}
+nav ul {
+  display: flex;
+}
+ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: rgb(14, 14, 12);
+  padding: 1rem;
+}
+ul li a:hover {
+  color: rgb(53, 188, 38);
+}
+@media screen and (max-width: 540px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+}

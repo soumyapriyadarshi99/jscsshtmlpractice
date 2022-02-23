@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,IAAI,CAAC;EAGD,gBAAgB,EAAE,cAAiB;CAUtC",
+    "sources": [
+        "conditional.scss"
+    ],
+    "names": [],
+    "file": "conditional.css"
+}

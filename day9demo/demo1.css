@@ -1,0 +1,122 @@
+.anmiat1 {
+  width: 30vw;
+  border: 1;
+  height: auto;
+  background-color: rebeccapurple;
+  border-radius: 10px;
+  padding: 20px;
+
+  animation-name: lift;
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 50%;
+  }
+}
+
+@keyframes slidein1 {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes out {
+  from {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  30% {
+    transform: translateY(0px) rotate(50deg);
+  }
+
+  to {
+    transform: translateY(200px) rotate(0deg);
+  }
+}
+
+@keyframes opac {
+  from {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 2;
+  }
+
+  30% {
+    transform: translateY(0px) rotate(00deg);
+    opacity: 1.5;
+  }
+
+  to {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes in {
+  from {
+    transform: rotateX(30deg);
+    opacity: 0.33;
+  }
+
+  to {
+    transform: translateY(300px);
+    opacity: 1;
+  }
+}
+
+@keyframes border {
+  from {
+    transform: translateY(0px) rotate(0deg);
+    border-radius: 60%;
+  }
+
+  30% {
+    transform: translateY(0px) rotate(50deg);
+    border-radius: 30%;
+  }
+
+  to {
+    transform: translateY(200px) rotate(0deg);
+    border-radius: 5%;
+  }
+}
+@keyframes lift {
+  from {
+    transform: translateX(0%) translateY(0%);
+  }
+
+  30% {
+    transform: translateX(0%) translateY(50%);
+  }
+
+  to {
+    transform: translateX(0%) translateY(100%);
+  }
+}

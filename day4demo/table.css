@@ -1,0 +1,23 @@
+.table1 {
+  background-color: #c8ebeb;
+  border: whitesmoke;
+}
+
+.table1 th,
+td {
+  padding: 15px;
+  width: auto;
+}
+
+.table1 tr:nth-child(odd) {
+  background: #6e6a6a;
+}
+
+.table1 tr:hover {
+  background-color: yellowgreen;
+}
+
+.table1:active {
+  background-color: orchid;
+}
+/*# sourceMappingURL=table.css.map */

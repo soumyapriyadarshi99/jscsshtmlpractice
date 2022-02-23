@@ -1,0 +1,39 @@
+::-webkit-input-placeholder {
+  font-size: 13px;
+}
+
+:-ms-input-placeholder {
+  font-size: 13px;
+}
+
+::-ms-input-placeholder {
+  font-size: 13px;
+}
+
+::placeholder {
+  font-size: 13px;
+}
+
+label {
+  font-size: 18px;
+  color: #9c9c9c;
+}
+
+@media screen and (max-width: 550px) {
+  ::-webkit-input-placeholder {
+    font-size: 10px;
+  }
+  :-ms-input-placeholder {
+    font-size: 10px;
+  }
+  ::-ms-input-placeholder {
+    font-size: 10px;
+  }
+  ::placeholder {
+    font-size: 10px;
+  }
+  label {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=regdtheme.css.map */

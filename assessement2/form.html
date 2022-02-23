@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Assessement form</title>
+</head>
+<body>
+  <div class="container">
+      <form action="#" method="get" onsubmit="formvalidate()" class="regdform">
+        <div class="input">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="input">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div class="input">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="input">
+            <p>Gender</p>
+            <label for="male">Male</label>
+            <input type="radio" name="genderselect" id="male" required>
+            <label for="female">female</label>
+            <input type="radio" name="genderselect" id="female" required>
+        </div>
+        <div class="input">
+            <label for="shipping_address">Shipping Address</label>
+            <textarea name="shipping_address" id="shipping_address" cols="30" rows="5"></textarea>
+        </div>
+        <div class="input">
+            <label for="state">State</label>
+            <select name="state" id="state">
+                <option value="odisha">Odisha</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Maharastra">Maharastra</option>
+                <option value="up">up</option>
+                <option value="hp">hp</option>
+            </select>
+        </div>
+        <button type="submit" id="submit" value="registere">Register</button>
+        <button type="reset" id="reset" value="reset">Reset</button>
+      </form>
+  </div>
+    <script src="./js/form.js"></script>
+</body>
+</html>
