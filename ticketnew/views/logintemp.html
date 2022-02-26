@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online Movie Booking</title>
+    <link rel="stylesheet" href="../assets/styles/header.css" />
+    <link rel="stylesheet" href="../assets/styles/footer.css" />
+    <link rel="stylesheet" href="../assets/styles/loginstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- section-header-start -->
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">
+          <img
+            id="logo-image"
+            src="../assets/images/tn-logo-01.svg"
+            width="100"
+            alt="logo"
+        /></a>
+
+        <span class="nav-right">
+          <i class="fa fa-user"></i>
+          <a href="#" id="login">LOG IN / SIGN UP</a>
+          <a class="border-style">|</a>
+          <a href="offersindex.html">OFFERS</a>
+          <a class="border-style">|</a>
+          <i class="fa fa-mobile"></i>
+          <a href="appindex.html">APP</a>
+        </span>
+
+        <a href="javascript:void(0);" class="icon" onclick="headFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+
+    <!-- section-header-end-->
+
+    <!-- Sample Division for the content-start -->
+    <main id="main1">
+      <div>
+        <form class="login-form">
+          <div class="login-container">
+            <p>Login</p>
+            <div class="admin-login">
+              Admin Login <a href="../views/form.html">Here</a>
+            </div>
+            <div class="input1">
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  autofocus
+                  tabindex="1"
+                  onblur="emptyemail()"
+                  required
+                  placeholder="Email ID"
+                />
+              </div>
+              <div id="emailerror"  class="error-msg"></div>
+            </div>
+            <div class="input1">
+              <div>
+                <input
+                  type="password"
+                  id="passw"
+                  placeholder="Password"
+                  tabindex="2"
+                  required
+                />
+              </div>
+
+              <div id="passerror"  class="error-msg"></div>
+
+              <div>
+                <div class="input1">
+                  <button type="submit" onclick="loginsuccess(event)">
+                    Login
+                  </button>
+                </div>
+                <div class="psw">
+                  Forgot
+                  <a class="pas1" id="forgot1" href="forget.html">password?</a>
+                </div>
+
+                <div class="reg">
+                  Create Account <a href="signup.html" id="signup">Sign Up</a>
+                </div>
+              </div>
+
+              <!-- Forgot <a href="#"> password? </a>    -->
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- Sample Division for the content-end -->
+
+    <!-- footer-start -->
+    <footer class="ct-footer">
+      <div class="ft-image-display">
+        <div class="ft-image-block">
+          <img
+            class="ft-image"
+            src="../assets/images/customer-care.svg"
+            alt="customer-care-icon"
+          />
+          <p class="ft-image-text">CUSTOMER CARE</p>
+        </div>
+        <div class="ft-image-block">
+          <img
+            class="ft-image"
+            src="../assets/images/feedback.svg"
+            alt="feedback-icon"
+          />
+          <p class="ft-image-text">FEEDBACK</p>
+        </div>
+        <div class="ft-image-block">
+          <img class="ft-image" src="../assets/images/faq.svg" alt="faq-icon" />
+          <p class="ft-image-text">FAQ</p>
+        </div>
+        <div class="ft-image-block">
+          <img
+            class="ft-image"
+            src="../assets/images/about-us.svg"
+            alt="about-us-icon"
+          />
+          <p class="ft-image-text">ABOUT US</p>
+        </div>
+        <div class="ft-image-block">
+          <img
+            class="ft-image"
+            src="../assets/images/boxoffice.svg"
+            alt="box-office-icon"
+          />
+          <p class="ft-image-text">BOX OFFICE</p>
+        </div>
+      </div>
+
+      <div class="footer-container">
+        <ul class="ct-footer-list">
+          <li>
+            <h2 class="ct-footer-list-header">BROWSE ALL</h2>
+            <ul>
+              <li>
+                <a href="">Blog</a>
+              </li>
+              <li>
+                <a href="">Now Showing</a>
+              </li>
+              <li>
+                <a href="">Coming</a>
+              </li>
+              <li>
+                <a href="">All Movies</a>
+              </li>
+              <li>
+                <a href="">Cinemas</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="ct-footer-list-header">LINKS</h2>
+            <ul>
+              <li>
+                <a href="">Register</a>
+              </li>
+              <li>
+                <a href="">Login</a>
+              </li>
+              <li>
+                <a href="">Order</a>
+              </li>
+              <li>
+                <a href="">Help</a>
+              </li>
+              <li>
+                <a href="">How to use coupons</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="ct-footer-list-header">CINEMAS</h2>
+            <ul>
+              <li>
+                <a href="">Sri Vishnu Cinemas</a>
+              </li>
+              <li>
+                <a href="">Lakshmi Cinemas</a>
+              </li>
+              <li>
+                <a href="">Srinivasa Theatre</a>
+              </li>
+              <li>
+                <a href="">Baba Cinemas</a>
+              </li>
+              <li>
+                <a href="">Chandralok Cinemas</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="ct-footer-list-header">ENQUIRIES</h2>
+            <ul>
+              <li>
+                <a href="">Events</a>
+              </li>
+              <li>
+                <a href="">Dealers</a>
+              </li>
+              <li>
+                <a href="">Advertising</a>
+              </li>
+              <li>
+                <a href="">Theatre Owners</a>
+              </li>
+              <li>
+                <a href="">Support</a>
+              </li>
+              <li>
+                <a href="">Technical Support</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="ct-footer-list">
+          <li>
+            <h2 class="ct-footer-list-header">UPCOMING MOVIES</h2>
+            <ul>
+              <li>
+                <a href="">Rattham Ranam Rowthiram</a>
+              </li>
+              <li>
+                <a href="">KGF Chapter 2</a>
+              </li>
+              <li>
+                <a href="">Radhe Shyam</a>
+              </li>
+              <li>
+                <a href="">Vikram</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="ct-footer-list-header">NOW PLAYING</h2>
+            <ul>
+              <li>
+                <a href="">Writer</a>
+              </li>
+              <li>
+                <a href="">83</a>
+              </li>
+              <li>
+                <a href="">Rocky</a>
+              </li>
+              <li>
+                <a href="">Pushpa</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="ct-footer-list-header">NEXT CHANGE</h2>
+            <ul>
+              <li>
+                <a href="">Spider Man</a>
+              </li>
+              <li>
+                <a href="">Ghosty</a>
+              </li>
+              <li>
+                <a href="">Velle</a>
+              </li>
+              <li>
+                <a href="">Eternals</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="ct-footer-post">
+          <ul>
+            <li>
+              <a href="#" class="fa fa-facebook"></a>
+            </li>
+            <li>
+              <a href="#" class="fa fa-twitter"></a>
+            </li>
+          </ul>
+
+          <ul>
+            <li>Copyright © 2022 XT Core Team. All rights reserved</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer-end -->
+
+    <!-- <script type="module" src="../assets/js/loginuserinterface.js"></script> -->
+    <script src="../assets/js/login.js"></script>
+    <script src="../assets/js/header.js"></script>
+  </body>
+</html>

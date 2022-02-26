@@ -1,0 +1,87 @@
+button {   
+    background-color:#f4b400;   
+    width: 100%;  
+     color: rgb(255, 255, 255);   
+     padding: 15px;   
+     margin: 10px 0px;   
+     border: none; 
+     border-radius: 3px;  
+     cursor: pointer;   
+      }   
+  .login-form {   
+     /* border: 3px solid #f1f1f1;    */
+     width: 95vw;
+     /* margin-right: 20px; */
+  }   
+  .error-msg{
+   color:red;
+ }
+  
+  p{
+   font-size: 22px;
+  }
+  input[type=text], input[type=password], input[type=email] {   
+     width: 100%;   
+     margin: 8px 0;  
+     padding: 12px 20px;   
+     display: inline-block;   
+     border: 1px solid rgb(0, 0, 0);   
+     box-sizing: border-box;   
+  }
+  
+
+
+  button:hover {   
+     opacity: 0.7; 
+     transition: 0.8s;  
+  }   
+     
+  
+  .psw{
+     padding-right:25px;
+     font-size: 13px;
+  }
+  
+  .admin-login{
+   font-size: 13px;
+  
+}
+  
+  .reg{
+   padding:10px 0px;
+    font-size: 13px;
+  }
+  .login-container {   
+  margin-top: 80px;
+  
+     padding: 20px;   
+     background-color: rgb(255, 255, 255);  
+     /* width: 80vw; */
+     height: 350px;
+     /* box-shadow: 5px 10px black; */
+  }   
+  
+  @media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1700px)  
+{ 
+
+   
+    .login-container{
+        width: 400px;
+        margin-top: 20px;
+        /* margin-left: 400px; */
+        /* margin-right: auto; */
+        height: 450px;
+        /* border-radius: 10px; */
+        /* border: 2px solid black; */
+    }
+    .login-form{
+        display: flex;
+        justify-content: center;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:65px;
+
+    }
+} 

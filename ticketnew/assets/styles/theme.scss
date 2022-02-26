@@ -1,0 +1,89 @@
+// @font-face {
+//   font-family: Nexa-Light;
+//   src: url("./Nexa-Light.otf");
+// }
+@font-face {
+  font-family: sans-serif;
+  src: url("./sans-serif.ttf");
+}
+
+// @font-face {
+//   font-family: Nexa-Bold;
+//   src: url("./Nexa-Bold.otf");
+// }
+$white1: #ffffff;
+$white2: #e2e2e2;
+$white3: #bdbdbd;
+$lightwhite: #f5f5f5;
+$darkyellow: #ffc20e;
+$normalyellow: #ffc107;
+$darkblue: #448aff;
+$blue: #0000ee;
+$gray: #636668;
+$lightgray: #757575;
+$darkgray: #444a53;
+$lightblack1: #39393f;
+$lightblack2: #212121;
+$lightblack3: #424249;
+$lightblack: #2c333d;
+$black: #000000;
+$darkblack1: #2c333d;
+$darkblack2: #2f2f34;
+$voilet: #551a8b;
+.container {
+  box-sizing: border-box;
+}
+@media screen and (min-width: 315px) {
+  body {
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  a {
+    font-size: 13px;
+    line-height: 15px;
+    color: $white3;
+  }
+  ul li {
+    list-style: none;
+  }
+  button {
+    font-size: 12px;
+    background-color: $darkyellow;
+    color: $white1;
+  }
+}
+@media screen and (min-width: 764px) and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  a {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  ul li {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  button {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  body {
+    font-size: 15.5px;
+    line-height: 17.5px;
+  }
+  a {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  ul li {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  button {
+    font-size: 13px;
+  }
+}

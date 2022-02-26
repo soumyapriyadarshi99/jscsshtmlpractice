@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+.nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+input {
+  width: 85%;
+  outline: none;
+  margin-bottom: 10px; //
+  height: 45px;
+  padding: 0 60px 0 60px; //
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px; //
+}
+
+.clear {
+  position: absolute;
+  top: 8%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  right: 210px;
+  background: grey;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clear::before {
+  position: relative;
+  content: "";
+  width: 1px;
+  height: 15px;
+  margin: 1px solid white;
+  background: white;
+  transform: rotate(45deg);
+}
+
+.clear::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 15px;
+  background: #999;
+  transform: rotate(315deg);
+}
+
+.movielist_2-items {
+  list-style: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.movielist_2-item {
+  background-color: white;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  transition: all 0.3s;
+}
+
+.movielist_2-item:last-child() {
+  border-bottom: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.movielist_2-item:hover {
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.no-item {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-left: 5px solid red;
+  background-color: pink;
+  color: red;
+  text-align: center;
+}
+.nav .search {
+  //
+  position: relative;
+}
+
+.search .fa-search {
+  height: 55px;
+  width: 55px;
+  line-height: 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 15px;
+  color: #333;
+}
+
+.cancel {
+  cursor: pointer;
+}
+
+// .search .fa-times{
+//   height: 55px;
+//   width: 55px;
+//   line-height: 45px;
+//   position: absolute;
+//   top:0;
+//   right:0;
+//   text-align: center;
+//   font-size: 15px;
+//   color:#333
+// }
+
+mark {
+  color: black;
+  padding: 5px;
+  background: red;
+}
+
+// .highlight {
+//   background-color: red;
+// }
+
+// @media screen and (min-width: 1280px) {
+//   body {
+//     background: whitesmoke;
+//     font-family: Arial, Helvetica, sans-serif;
+//     height: 200vh;
+//   }
+//   .nav {
+//     max-width: 2100px;
+//     margin: 0 auto;
+//     padding: 3rem;
+//     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+//     background-color: #eee;
+//     border-radius: 10px;
+//   }
+//   input {
+//     width: 200%;
+//     outline: none;
+//     margin-bottom: 3rem;
+//     height: 90px;
+//     padding: 0.5rem 2 rem;
+//     border: 1px solid #ccc;
+//     border-radius: 10px;
+//   }
+// }

@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+._container {
+  width: auto;
+  padding: 20px;
+}
+
+.ticket-summary {
+  display: flexbox;
+}
+
+.row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-width: auto;
+  max-width: 100%;
+}
+
+.row1 span {
+  padding: 10px 0;
+}
+
+#interhandling,
+#Convenience,
+#igst,
+#igst-value {
+  color: #757575;
+}
+
+#mobile-field {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border: 1px solid;
+}
+
+#email-field {
+  margin: 10px 0;
+  border: 1px solid;
+}
+
+#promo-field {
+  width: 204px;
+  height: 36px;
+  font-size: 12px;
+  line-height: 36px;
+  margin: 0;
+  padding: 0 5px;
+  margin-top: 10px;
+  border: 1px solid;
+}
+
+#apply-button {
+  width: 62px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  text-align: center;
+  color: #757575;
+  background: #e2e2e2;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+#total-price-tag {
+  line-height: 18px;
+  color: gray;
+}
+
+#total-price {
+  font-size: 18px;
+  color: #f44336 !important;
+}
+
+#total-price-container {
+  margin-bottom: 80px;
+}
+
+#submit {
+  border-top: 1px solid;
+  width: 170px;
+  border: 0;
+  height: 46px;
+  line-height: 46px;
+  font-size: 16px;
+  text-align: center;
+  background: #f4b400;
+  color: #fff;
+  border: 1px solid #cd9700;
+  cursor: pointer;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+#cancel {
+  background: #f5f5f5;
+  border-color: #e2e2e2;
+  color: #000;
+  height: 46px;
+  width: 130px;
+  line-height: 46px;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.contact-details-formfields input {
+  width: 234px;
+  height: 36px;
+  font-size: 12px;
+  line-height: 36px;
+  margin: 0;
+  padding: 0 5px;
+}
+
+.lable {
+  font-size: 14px;
+  line-height: 38px;
+  margin-right: 9px;
+}
+
+#label-email {
+  margin-right: 240px;
+}
+
+#label-mobile {
+  margin-right: 240px;
+}
+
+input {
+  margin: 10px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 92%;
+}
+
+#footer-row1 {
+  width: 100%;
+}
+
+.heading {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e2e2;
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.heading2 {
+  margin: 19px 0;
+}
+
+.movieshowdetials {
+  display: flexbox;
+  width: 100%;
+}
+
+.movieshowdetials div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+}
+
+.movieshowdetials div span {
+  border-right: 1px solid #e2e2e2;
+  line-height: 1.08;
+}
+
+.tittle {
+  background-color: #e2e2e2;
+  width: 20%;
+  text-align: center;
+  padding: 19px 0;
+}
+
+.value {
+  width: 80%;
+  padding: 19px 0 19px 20px;
+}
+
+.container-promotional-code {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  ._container {
+    padding: 0 10px;
+  }
+  ._container,
+  .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px;
+  }
+  .main-inner-container {
+    width: 100%;
+  }
+  .main-content {
+    -ms-flex-preferred-size: 60%;
+    flex-basis: 60%;
+    margin-right: 20px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .ticket-summary {
+    width: 100%;
+  }
+  .sidebar {
+    -ms-flex-preferred-size: 32%;
+    flex-basis: 32%;
+    margin: 10px;
+  }
+  .anchor {
+    width: 100%;
+  }
+  #submit,
+  #cancel {
+    width: 100%;
+  }
+  .footer {
+    position: initial;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+  }
+  #footer-row1 {
+    width: 30%;
+    margin-right: 40px;
+  }
+  .movieshowdetials div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border: 1px solid black;
+    line-height: 28px;
+  }
+  #total-price-container {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  ._container {
+    display: flex;
+  }
+
+  .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 10px;
+  }
+  .main-inner-container {
+    width: 100%;
+  }
+  .main-content {
+    -ms-flex-preferred-size: 60%;
+    flex-basis: 60%;
+    margin-right: 20px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .ticket-summary {
+    width: 100%;
+  }
+  .sidebar {
+    -ms-flex-preferred-size: 32%;
+    flex-basis: 32%;
+    margin: 10px;
+  }
+  .anchor {
+    width: 100%;
+  }
+  #submit,
+  #cancel {
+    width: 100%;
+  }
+  .footer {
+    position: initial;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+  }
+  #footer-row1 {
+    width: 30%;
+    margin-right: 100px;
+  }
+  .movieshowdetials div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border: 1px solid black;
+    line-height: 28px;
+  }
+  #total-price-container {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #submit {
+    width: 130px;
+  }
+  ._container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=cartpage.css.map */

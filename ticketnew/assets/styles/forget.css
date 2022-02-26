@@ -1,0 +1,100 @@
+p{
+    font-size: 22px;
+  }
+  button {   
+       background-color:#f4b400;   
+       width: 100%;  
+        color: rgb(255, 255, 255);   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none; 
+        border-radius: 3px;  
+        cursor: pointer;   
+         }   
+  form {   
+        /* border: 3px solid #f1f1f1;    */
+        width: 95vw;
+        /* margin-right: 20px; */
+    }   
+  input {   
+        width: 100%;   
+        margin: 8px 0;
+        margin-bottom: 20px;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 0.5px solid rgb(168, 168, 168);   
+        box-sizing: border-box;   
+    }  
+
+  .error-msg{
+      color:red;
+    }
+    .input:focus {
+      outline: none !important;
+      border:1px solid #f4b400;
+      /* box-shadow: 0 0 10px #719ECE; */
+    }
+  button:hover {   
+        opacity: 0.7; 
+        transition: 0.8s;  
+    }   
+  .cancelbtn {  
+      background-color: rgb(223, 95, 95); 
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px; 
+    }  
+    
+    .btn1{
+        margin-top: 30px;
+    }
+        
+     
+  .forget-container {   
+     margin-top: 80px;
+     /* margin-left: 10vw;
+     margin-right: 10vw; */
+     /* width: 100px; */
+     /* display: flex;
+     flex-direction: column; */
+        padding: 20px;   
+        background-color: rgb(255, 255, 255);  
+        /* width: 80vw; */
+        height: 350px;
+        /* box-shadow: 5px 10px black; */
+    }   
+
+
+    @media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1700px)  
+{ 
+    .forget-container{
+        width: 400px;
+        margin-top: 80px;
+        /* margin-left: 400px; */
+        /* margin-right: auto; */
+        height: 450px;
+        /* border-radius: 10px; */
+        /* border: 2px solid black; */
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        margin-left:auto;
+        margin-right:auto;
+        /* padding-bottom: 20px; */
+
+    }
+
+    input[type=text], input[type=password], input[type=email], input[type=tele] {  
+        border: 0.5px solid rgb(168, 168, 168);
+        box-sizing: border-box;
+}
+    .input:focus {
+    /* outline: none !important; */
+    border:0.5px solid #f4b400;
+    /* box-shadow: 0 0 10px #719ECE; */
+  }
+}
+  

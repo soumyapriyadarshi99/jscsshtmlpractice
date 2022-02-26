@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM VALIDATION</title>
+    <meta name="description" content="admin form to update profile">
+    <meta name="admin" content="Nayanika Shukla">
+    <link rel="stylesheet" href="../assets/styles/theme.css">
+	<link rel="stylesheet" href="../assets/styles/adminheader.css">
+    <link rel="stylesheet" href="../assets/styles/update.css">
+    
+    
+</head>
+<body>
+    <!-- section-header-start -->
+	<header>
+		<div class="topnav" id="myTopnav">
+	
+		  <a href="index.html"> <img id="logo-image" src="../assets/images/tn-logo-01.svg" width="100" alt="ticketnew logo"></a>
+	
+		<!-- </div> -->
+		 
+		<span class="nav-right">
+		  <i class="fa fa-user"></i>
+		  <a href="logintemp.html" id="login">LOG IN / SIGN UP</a>
+		  <a class="border-style">|</a>
+		  <a href="#">OFFERS</a>
+		  <a class="border-style">|</a>
+		  <i class="fa fa-mobile"></i>
+		  <a href="#">APP</a>
+		 </span>
+	  
+		<a href="javascript:void(0);" class="icon" onclick="headFunction()">
+		  <i class="fa fa-bars"></i>
+		</a>
+	  </div>
+	  </header>
+	<!-- section-header-end-->
+    <!-- Form section begins-->
+    <div role="form" aria-hidden="true">
+    <form  id="create-account-form">
+        
+        <div class="title">
+            <h2>UPDATE</h2>
+        </div>
+        <!-- USERNAME -->
+        <div class="input-group">
+            <label for="username">Name</label>
+            <input type="text" id="username" placeholder="Name" name="username" aria-hidden="true">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+        <!-- EMAIL -->
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" name="email" >
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+        <!-- PASSWORD -->
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password" name="password" >
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+        <!-- CONFIRM PASSWORD -->
+        <div class="input-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Password" name="confirmpassword" >
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+        <button type="submit" class="btn">LOGIN</button>
+   
+    </form>
+    </div>
+
+    
+    <script src="../assets/js/update.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="movie ticket booking" />
+    <link rel="stylesheet" href="../assets/styles/theme.css" />
+    <link rel="stylesheet" href="../assets/styles/header.css" />
+    <link rel="stylesheet" href="../assets/styles/seatmatrix.css" />
+    <title>Movie Seat Booking</title>
+  </head>
+
+  <body>
+    <!--header start-->
+    <!-- onload="passingMovieName()" -->
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">
+          <img
+            id="logo-image"
+            src="../assets/images/tn-logo-01.svg"
+            alt="site logo"
+          />
+        </a>
+
+        <a href="#" class="hide">[Delhi NCR ]</a>
+        <a class="active hide" href="#">HOME</a>
+        <a href="#" class="hide">MOVIES</a>
+        <a href="#" class="hide">THREATRES</a>
+        <a href="#" class="hide">
+          <i class="fa fa-search"></i>
+          SEARCH
+        </a>
+        <a style="margin-right: 10%;" href="#" class="hide">ORDERS</a>
+
+        <!-- </div> -->
+
+        <span class="nav-right">
+          <i class="fa fa-user"></i>
+          <a href="logintemp.html" id="login">LOG IN / SIGN UP</a>
+          <a class="border-style">|</a>
+          <a href="#">OFFERS</a>
+          <a class="border-style">|</a>
+          <i class="fa fa-mobile"></i>
+          <a href="#">APP</a>
+        </span>
+
+        <a href="javascript:void(0);" class="icon" onclick="headFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <!--end of header-->
+
+    <div id="includedContent"></div>
+    <div class="seatcontainer">
+      <div class="seatsview">
+        <div class="seatmat">
+          <div class="movieprice">Please select seat from here</div>
+          <div class="row">
+            <div class="columnname">A</div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+          </div>
+
+          <div class="row">
+            <div class="columnname">B</div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto taken occupied seat"></div>
+            <div class="col col-lg-1 place mx-auto taken occupied seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto taken occupied seat"></div>
+            <div class="col col-lg-1 place mx-auto taken occupied seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto taken occupied seat"></div>
+            <div class="col col-lg-1 place mx-auto taken occupied seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+            <div class="col col-lg-1 place mx-auto unbooked seat"></div>
+          </div>
+        </div>
+        <div class="screen">Screen this side</div>
+        <ul class="showcase">
+          <li>
+            <div class="seat"></div>
+            <small>N/A</small>
+          </li>
+          <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+          </li>
+          <li>
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+          </li>
+        </ul>
+        <p class="text">
+          You have selected
+          <span id="count">0</span>
+          seats
+        </p>
+        <!-- <p class="text">Total ticket price is <span id="totalcount">0</span> </p> -->
+      </div>
+      <div class="calculateview">
+        <div class="moviename" id="moviename"></div>
+        <div class="movielanguage" id="movielanguage"></div>
+        <div class="theatres" id="theatres">THEATRES</div>
+        <div class="theatrename" id="theatrename"></div>
+        <div class="showtime" id="showtime">SHOWTIME</div>
+        <div class="showtimedesc" id="showtimedesc"></div>
+        <form action="cartpage.html">
+          <button id="submitticket" class="submitticket" tabindex="1">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../assets/js/seatmatrix.js"></script>
+    <script src="../assets/js/header.js"></script>
+  </body>
+</html>

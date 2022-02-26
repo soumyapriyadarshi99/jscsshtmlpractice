@@ -1,0 +1,85 @@
+/* header */
+.topnav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #2c333d;
+    padding-bottom: 10px;
+  }
+  
+  .topnav a {
+    padding: 10px;
+    color: #bdbdbd;
+    font-size: 13px;
+    text-decoration: none;
+  }
+  
+  
+  .topnav a:hover,a.active {
+    color: #ffc107;
+    text-underline-offset: 14px;
+    text-decoration: underline #ffc107 2px;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  .nav-right{
+    float: right;
+    padding-top: 10px;
+  }
+  
+  #logo-image{
+    position: relative;
+    top: 12px;
+  }
+  
+  
+  /* Media-Query */
+  
+  @media screen and (min-width: 375px) and (max-width: 1024px) {
+    .topnav :is(a:not(:first-child), i:not(:first-child)) {
+      display: none;
+    }
+    .nav-right{
+      float: left;
+      padding-top: 0px;
+    }
+    .nav-right i{
+      display: none;
+    }
+    .fa-user,.fa-search{
+      display: none;
+      
+    }
+  
+    
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {
+      position: relative;
+      
+    }
+    .topnav.responsive :is(.fa-user,  .border-style, .fa-search){
+     display: none;
+      
+    }
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      
+    }
+  }
+  
+  
+  /* header-ended */

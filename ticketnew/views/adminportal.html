@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--meta tags for description and admin name-->
+    <meta name="description" content="Admin portal of the TICKETNEW website">
+    <meta name="admin" content="Nayanika Shukla">
+    <title>Admin portal-Ticketnew</title>
+    <link rel="stylesheet" href="../assets/styles/theme.css">
+    <link rel="stylesheet" href="../assets/styles/adminportal.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+        <!--navigation bar/side bar starts-->
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                    <span class="icon"><img src="../assets/images/tn-logo-01.svg"  aria-hidden="true" width="100" alt="ticketnew logo"></span>
+                    <span class="title" id="ticketnewtitle">TICKETNEW</span>
+                </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="las la-tachometer-alt"></i></span>
+                    <span class="title">DASHBOARD</span>
+                </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="las la-users"></i></span>
+                    <span class="title">USERS</span>
+                </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="las la-film"></i></span>
+                    <span class="title">MOVIES</span>
+                </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="las la-thumbtack"></i></span>
+                    <span class="title">THEATRES</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="las la-edit"></i></span>
+                    <span class="title">UPDATE</span>
+                </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="las la-lock-open"></i></span>
+                    <span class="title">PASSWORD</span>
+                </a>
+                </li>
+                <li>
+                    <a href="../views/update-admin.html">
+                    <span class="icon"><i class="las la-sign-out-alt"></i></span>
+                    <span class="title">UPDATE</span>
+                     </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="togglemenu()"></div>
+                    <div class="search"><label>
+                        <input type="text" placeholder="Search Here"/>
+                        <i class="las la-search"></i>
+                    </label>
+                </div>
+                    <div class="user">
+                        <img src="../assets/images/cristina_aleixendri_portrait_-_vertical_0.jpg" aria-hidden="true" alt="admin user photograph">
+                    </div>
+                </div>
+            <div class="cards">
+                <div class="card-single">
+                    <div>
+                        <h1>42</h1>
+
+                    </div>
+                <div>              
+                <span class="las la-users"></span>
+            </div>
+        </div>
+        
+            <div class="card-single">
+                <div>
+                    <h1>79</h1>
+                    
+                </div>
+            <div>              
+            <span class="las la-video"></span>
+        </div>
+    </div>
+    
+        <div class="card-single">
+            <div>
+                <h1>124</h1>
+
+            </div>
+        <div>              
+        <span class="las la-check-double"></span>
+    </div>
+</div>
+<div class="card-single">
+    <div>
+        <h1>Rs.280</h1>
+
+    </div>
+<div>              
+<span class="las la-wallet"></span>
+</div>
+</div>
+        </div>
+    
+        <div class="details">
+            <div class="recent-movie">
+             <div class="cardheader">
+                 <h2>Recent Movie</h2>
+                 <a href="#" class="btn">View All</a>
+             </div>
+             <table id="movielist">
+                 <thead>
+                     <tr>
+                         <td>MovieName</td>
+                         <td>Price</td>
+                         <td>Payment</td>
+                         <td><span>Status</span></td>
+                     </tr>
+                 </thead>
+                <tbody id="movietable"></tbody>
+          </table>
+            </div>
+            <div class="recent-users">
+                <div class="cardheader">
+                    <h2>Recent Users</h2>
+                   
+                </div>
+                <table id="users">
+                    <tbody>
+                       
+                        <tr>
+                            <td style="width: 60px"><div class="img"><img src="../assets/images/0x0.jpg" width="100" alt="user 1"></div></td>
+                            <td><h4>Reema<br><span>Delhi</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td><div class="img"><img src="../assets/images/300871018TEAL_1.webp" alt="user 2"></div></td>
+                            <td><h4>Rohan<br><span>Delhi</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 60px"><div class="img"><img src="../assets/images/close-portrait-young-smiling-handsome-260nw-1180874596.webp" alt="user 3"></div></td>
+                            <td><h4>Amit<br><span>Delhi</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 60px"><div class="img"><img src="../assets/images/cristina_aleixendri_portrait_-_vertical_0.jpg" alt=" user 4"></div></td>
+                            <td><h4>Jessica<br><span>Delhi</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 60px"><div class="img"><img src="../assets/images/istockphoto-509198422-170667a.jpg" alt="user 5"></div></td>
+                            <td><h4>George<br><span>Delhi</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 60px"><div class="img"><img src="../assets/images/pexels-photo-2379004.jpeg" alt="user 6"></div></td>
+                            <td><h4>Varun<br><span>Delhi</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 60px"><div class="img"><img src="../assets/images/cristina_aleixendri_portrait_-_vertical_0.jpg" alt="user 7"></div></td>
+                            <td><h4>Bella<br><span>Delhi</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 60px"><div class="img"><img src="../assets/images/close-portrait-young-smiling-handsome-260nw-1180874596.webp" alt="user 8"></div></td>
+                            <td><h4>Ankush<br><span>Delhi</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 60px"><div class="img"><img src="../assets/images/close-portrait-young-smiling-handsome-260nw-1180874596.webp" alt="user 8"></div></td>
+                            <td><h4>Viren<br><span>Delhi</span></h4></td>
+                        </tr>
+                        
+                    </tbody>
+                   
+                </table>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+
+
+
+<script src="../assets/js/admin_portal.js"></script>
+</body>
+</html>

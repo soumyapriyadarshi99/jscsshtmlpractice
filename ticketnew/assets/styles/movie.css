@@ -1,0 +1,246 @@
+/* Main Part Started-Group3 */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 400;
+}
+
+.movie-info-page {
+  height: auto;
+  width: 100%;
+}
+
+.background-blur-image {
+  overflow: hidden;
+  height: 75%;
+  width: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: blur(1.5px) brightness(55%);
+  filter: blur(1.5px) brightness(55%);
+}
+
+.background-blur-image img {
+  height: 400px;
+  width: 100%;
+}
+
+.poster-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 90px;
+  bottom: 150px;
+  left: 10%;
+  z-index: 1;
+}
+
+.poster-image img {
+  width: 200px;
+  height: 300px;
+  border: 4px solid white;
+  margin-top: 25px;
+}
+
+.movie-info-textbox {
+  height: 300px;
+  padding: 0px 30px;
+  margin: 20px;
+  margin-top: 50px;
+  color: #fff;
+  width: 370px;
+  font-family: sans-serif;
+}
+
+ul.address-menu li {
+  display: inline;
+  font-size: small;
+}
+
+.address-menu {
+  padding-left: 150px;
+}
+
+.day,
+.date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul.day-in-week li a {
+  display: block;
+  text-align: center;
+  padding: 40px;
+  text-decoration: none;
+  color: #ffc107;
+  font-weight: 600;
+}
+
+ul.day-in-week li {
+  display: inline-block;
+}
+
+.seq-of-days {
+  padding-left: 120px;
+}
+
+.theatername {
+  padding-left: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.timing li {
+  padding-left: 30px;
+  list-style-type: none;
+}
+
+.timing li a {
+  text-decoration: none;
+  color: #4caf50;
+  font-size: 15px;
+}
+
+.theatername-h5 {
+  font-size: medium;
+  opacity: 0.8;
+}
+
+.theater-details {
+  width: 400px;
+  padding-bottom: 15px;
+  font-size: small;
+}
+
+.theater-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+}
+
+.horizontal-line {
+  opacity: 0.1;
+  margin-right: 150px;
+}
+
+.theater-block:hover {
+  background-color: rgba(252, 249, 249, 0.904);
+}
+
+.theater-details p {
+  opacity: 0.5;
+}
+
+.city-info-line {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  padding-left: 120px;
+}
+
+.city-info-line-para {
+  padding-bottom: 40px;
+  opacity: 0.5;
+  font-size: small;
+  text-align: justify;
+  padding-right: 30px;
+  padding-left: 120px;
+}
+
+.content-of-poster-image,
+p {
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.movie-info-textbox-h3 {
+  font-size: 20px;
+  margin-bottom: 9px;
+}
+
+.movie-info-textbox-h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.content-of-poster-image {
+  margin-top: 30px;
+}
+
+/* Media Query for Mobile-Group3 */
+@media screen and (max-width: 768px) {
+  .poster-image {
+    height: 220px;
+  }
+  .background-blur-image {
+    height: 250px;
+  }
+  .poster-image img {
+    width: 100px;
+    height: 180px;
+    margin-top: 35px;
+    margin-left: -30px;
+  }
+  .movie-info-textbox {
+    height: 200px;
+    padding: 0px;
+    width: 200px;
+    margin-top: 30px;
+  }
+  .synopsis-block,
+  .address-menu {
+    display: none;
+  }
+  .seq-of-days {
+    padding-left: 0px;
+    margin-left: -20px;
+    margin-top: -30px;
+    margin-bottom: -35px;
+  }
+  .theatername {
+    padding-left: 0px;
+  }
+  .theater-block {
+    padding-bottom: 0px;
+  }
+  .theater-details {
+    width: 300px;
+  }
+  .horizontal-line {
+    margin-right: 0px;
+  }
+  .city-info-line {
+    padding-left: 15px;
+    padding-top: 30px;
+  }
+  .city-info-line-para {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .content-of-poster-image {
+    margin-top: 10px;
+  }
+  .movie-info-textbox-h3 {
+    margin-top: 10px;
+  }
+}
+
+/* Media Query for Tab-Group3 */
+/*# sourceMappingURL=movie.css.map */

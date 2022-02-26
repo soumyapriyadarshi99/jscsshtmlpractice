@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (min-width: 375px) {
+  .seatcontainer {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    margin-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .seatsview {
+    width: 70%;
+    text-align: center;
+  }
+  .showcase {
+    padding: 5px 10px;
+    border-radius: 5px;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .showcase li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 40px;
+  }
+  .showcase li small {
+    margin-left: 2px;
+    color: #444451;
+  }
+  .seatmat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .movieprice {
+    color: red;
+    margin-bottom: 15px;
+  }
+  .seat {
+    height: 12px;
+    width: 10px;
+    margin: 2px;
+    border: 2px solid #444451;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .seat.selected {
+    background-color: green;
+  }
+  .seat.occupied {
+    background-color: #444451;
+  }
+  .seat:nth-of-type(3) {
+    margin-right: 18px;
+  }
+  .seat:nth-last-of-type(3) {
+    margin-left: 18px;
+  }
+  .seat:not(.occupied):hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .showcase .seat:not(.occupied):hover {
+    cursor: default;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .screen {
+    background-color: #ece4e4;
+    color: #444451;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+  }
+  p.text {
+    margin: 5px 0;
+    color: #444451;
+  }
+  p.text span {
+    color: #6feaf6;
+  }
+  .calculateview {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .columnname {
+    margin-right: 15px;
+  }
+  .movielanguage {
+    margin-bottom: 15px;
+  }
+  .theatrename {
+    margin-bottom: 15px;
+  }
+  .showtimedesc {
+    margin-bottom: 15px;
+  }
+  .submitticket {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 50%;
+    background-color: #ffc20e;
+    margin: 0 auto;
+  }
+  button {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 764px) {
+  .seatcontainer {
+    margin-top: 20px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .seat {
+    height: 15px;
+    width: 16px;
+    margin: 3px;
+  }
+  .seatsview {
+    width: 50%;
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+  .showcase {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .calculateview {
+    width: 35%;
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .seat {
+    height: 19px;
+    width: 20px;
+    margin: 3px;
+  }
+  .seatsview {
+    width: 45%;
+  }
+  .screen {
+    background-color: #ece4e4;
+    color: #444451;
+    width: 90%;
+    text-align: center;
+  }
+  .calculateview {
+    width: 30%;
+  }
+}
+/*# sourceMappingURL=seatmatrix.css.map */

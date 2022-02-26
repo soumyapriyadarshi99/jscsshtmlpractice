@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--meta tags for description and admin name-->
+    <meta name="description" content="Admin portal main form">
+    <meta name="admin" content="Nayanika Shukla">
+	<title>Validated Login Form</title>
+    <link rel="stylesheet" href="../assets/styles/theme.css">
+    <link rel="stylesheet" href="../assets/styles/adminheader.css">
+	<link rel="stylesheet" href="../assets/styles/form.css">
+    
+</head>
+<body>
+	<!-- section-header-start -->
+	<header>
+		<div class="topnav" id="myTopnav">
+	
+		  <a href="index.html"> <img id="logo-image" src="../assets/images/tn-logo-01.svg" width="100" alt="ticketnew logo" ></a>
+
+		<!-- </div> -->
+		 
+		<span class="nav-right">
+		  <i class="fa fa-user"></i>
+		  <a href="logintemp.html" id="login">LOG IN / SIGN UP</a>
+		  <a class="border-style">|</a>
+		  <a href="#">OFFERS</a>
+		  <a class="border-style">|</a>
+		  <i class="fa fa-mobile"></i>
+		  <a href="#">APP</a>
+		 </span>
+	  
+		<a href="javascript:void(0);" class="icon" onclick="headFunction()">
+		  <i class="fa fa-bars"></i>
+		</a>
+	  </div>
+	  </header>
+	<!-- section-header-end-->
+	<div class="container" style="height: 500px"  >
+		
+		<h1 class="label">Admin Login</h1>
+		<div class="login_form" >
+		<form id="login_form" action="../views/adminportal.html " method="get">
+			<div class="input-group">
+			<div class="font">Email or Phone</div>
+			<input autocomplete="off" type="text" name="email" aria-placeholder="email">
+		</div>
+			<div id="email_error">Please fill up your Email or Phone</div>
+			<div class="font font2">Password</div>
+			<div class="input-group">
+			<input type="password" name="password" aria-placeholder="password">
+			<div id="pass_error">Please fill up your Password</div>
+		</div>
+			<button type="submit" id="submitbtn">Login</button>
+		    </form>
+	</div>
+	</div>	
+
+
+	<script src="../assets/js/form.js"></script>
+</body>
+</html>

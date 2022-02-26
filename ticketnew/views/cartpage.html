@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/styles/header.css"/>
+    <link rel="stylesheet" href="../assets/styles/cartpage.css" />
+</head>
+
+<body>
+    <!-- section-header-start -->
+  <header>
+    <div class="topnav" id="myTopnav">
+
+      <a href="index.html"> <img id="logo-image" src="../assets/images/tn-logo-01.svg" width="100" alt="logo" ></a>
+
+      <a href="#" class="hide" id="locbutton">[Delhi NCR ]</a>
+      <a class="active hide" href="#">HOME</a>
+      <a href="CategoryPage.html" class="hide">MOVIES</a>
+      <a href="#" class="hide">THREATRES</a>
+      <a href="searchmovie.html" class="hide"><i class="fa fa-search"></i>SEARCH</a>
+      <a style="margin-right:10%" href="#" class="hide">ORDERS</a>
+
+    <!-- </div> -->
+    
+    <span class="nav-right">
+      <i class="fa fa-user"></i>
+      <a href="logintemp.html" id="login">LOG IN / SIGN UP</a>
+      <a class="border-style">|</a>
+      <a href="offers.html">OFFERS</a>
+      <a class="border-style">|</a>
+      <i class="fa fa-mobile"></i>
+      <a href="app.html">APP</a>
+     </span>
+  
+    <a href="javascript:void(0);" class="icon" onclick="headFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  </header>
+<!-- section-header-end-->
+    <div class="_container">
+            <div class="main-content">
+                <!-- created main-inner-container to add data dynamically through js -->
+                <div class="main-inner-container" id="main-inner-container">
+                </div>
+                <!-- movieshowdetials contains main details of theatres and shows screen
+                this container is visible only for tablet and desktop -->
+                <div class="movieshowdetials">
+
+                </div>
+
+            </div>
+
+            <!-- sidebar contains all calulation part and this became main part in mobile view  -->
+            <div class="sidebar">
+                <div class="sidebar-content">
+
+                    <!-- order-summary contain ticket internet handling conviencefees -->
+                    <div class="order-summary">
+                        <h5 class="heading">Order Summary</h5>
+
+                        <div class="ticket-summary">
+                        </div>
+
+                        <div class="row1" id="firstrow">
+                            <span> Ticket(s)</span>
+                        </div>
+
+                        <u id="interhandling">Internet handling fees</u>
+
+                        <div class="row1" id="Convenience">
+                            <span>Convenience Fee</span>
+                        </div>
+
+                        <div class="row1" id="igst-container">
+
+                        </div>
+                    </div>
+                </div>
+
+             <!-- contact detials section -->
+                <div id="contact-details-mobile-view">
+                    <h5 class="heading">Contact Details</h5>
+                    <div class="contact-details-formfields">
+                        <div><label for="email-field" class="label" id="label-email">Email</label>
+                            <input type="email" required id="email-field" value="">
+                        </div>
+                        <div><label for="mobile-field" class="label" id="label-mobile">Mobile</label>
+                            <input type="number" value="" required id="mobile-field" />
+                        </div>
+                    </div>
+                </div>
+             
+            <!-- promotional code section -->
+                <div class="promotional-code">
+                    <h5 class="heading">Promotion Code</h5>
+                    <div class="container-promotional-code">
+                        <input type="text" name="promo-field" id="promo-field" placeholder="Enter Promotion Code"
+                            autocomplete="off" />
+                        <input type="button" value="Apply" id="apply-button" name="apply-button" />
+                    </div>
+                </div>
+            <!-- total price section -->
+                <div class="total-price total-items">
+                    <div class="row1" id="total-price-container">
+
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    <div>
+        
+    <!-- footer section -->
+        <footer class="footer">
+
+            <div class="row1" id="footer-row1">
+                <a href="../views/index.html" class="anchor"><input type="button" id="cancel" value="Cancel" /></a>
+                <input type="button" id="submit" value="submit" onclick='validation()'/>
+            </div>
+        </footer>
+
+        <script type="module" src="../assets/js/cartpage.js"></script>
+        <script src="../assets/js/header.js"></script>
+
+</body>
+</html>
